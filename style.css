@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calcolo{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dati{
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col{
+  width: calc(100%/3);
+  padding: 0 10px;
+}
+
+.btn{
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+.hidden{
+  display: none;
+}

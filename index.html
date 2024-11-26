@@ -7,6 +7,70 @@
   <title>js-biglietto-treno-form</title>
 </head>
 <body>
+
+  <h1 class="calcolo">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+  <div class="dati">
+    <div class="row">
+      <div class="col">
+        <label for="nome">Nome Cognome</label>
+        <input id="km" type="number" name="km" placeholder="Inserisci il tuo nome">
+      </div>
+
+      <div class="col">
+        <label for="km">Km da percorrere</label>
+        <input id="km" type="number" name="km" placeholder="Inserisci i km">
+      </div>
+
+      <div class="col">
+        <label for="fascia-eta">Fascia d'et&agrave;</label>
+        <select name="eta" id="fascia-eta">
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="over65">Over 65</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn" id="genera" type="button" name="button">Genera</button>
+      <button class="btn" id="reset" type="button" name="annulla">Annulla</button>
+    </div>
+  </div>
+
+
+  <section id="wrapper-biglietto" class="hidden">
+    <h2 class="calcolo">IL TUO BIGLIETTO</h2>
+    <div id="biglietto">
+      <h2>Dettaglio passeggero</h2>
+      <div class="dati">
+        <div class="nome">
+          <h2>Nome Passeggero</h2>
+          <div id="nome-passeggero">Ugo</div>
+        </div>
+        <div class="offerta">
+          <table>
+            <thead>
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozzza</th>
+                <th>Codice CP</th>
+                <th>Costo Biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span id="offerta-applicata">XXX</span></td>
+                <td><span id="carrozza">1234</span></td>
+                <td><span id="codice-cp">1234</span></td>
+                <td><span id="costo">000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <script src="script.js"></script>
 </body>
